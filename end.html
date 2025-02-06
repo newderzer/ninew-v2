@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <title>พี่รักหนูที่สุดเลยงับ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(213, 249, 253);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #e74c3c; /* สีแดงให้ดูเหมือนหัวใจ */
+            display: inline-block;
+            animation: heartbeat 1s infinite; /* การเคลื่อนไหวเต้นของหัวใจ */
+        }
+
+        /* การสร้าง keyframes ให้เหมือนหัวใจเต้น */
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1); /* ขนาดปกติ */
+            }
+            25% {
+                transform: scale(1.1); /* ขยายตัวขึ้นเล็กน้อย */
+            }
+            50% {
+                transform: scale(1); /* กลับสู่ขนาดปกติ */
+            }
+            75% {
+                transform: scale(1.1); /* ขยายตัวขึ้นเล็กน้อยอีกครั้ง */
+            }
+            100% {
+                transform: scale(1); /* กลับสู่ขนาดปกติ */
+            }
+        }
+
+        img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="image/love.gif" alt="">
+    <h1>พี่รักหนูที่สุดเลย ・❥・</h1>
+
+    <!-- ใช้ไฟล์เพลง .mp3 และ autoplay, muted -->
+    <audio id="myAudio" controls autoplay >
+        <source src="music/เพลงรัก.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>

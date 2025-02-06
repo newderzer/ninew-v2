@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <title> พี่รักหนูนะ </title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(184, 239, 246);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1px;
+            color: #3498db; /* เปลี่ยนสีของ <h1> เป็นสีน้ำเงิน */
+        }
+
+        div {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            width: 90px; /* กำหนดความกว้างของลิงก์ */
+            height: 100px; /* กำหนดความสูงของลิงก์ */
+            padding: 50px; /* เพิ่มพื้นที่ภายในลิงก์ */
+            text-align: center; /* จัดการให้อยู่ตรงกลาง */
+             /* เพิ่มเส้นขอบ */
+            border-radius: 30px; /* เพิ่มมุมโค้ง */
+            margin-bottom: 100px;
+        }
+        b {
+            display: inline-block;
+            margin: 10px;
+            width: 250px; /* กำหนดความกว้างของลิงก์ */
+            height: 250px; /* กำหนดความสูงของลิงก์ */
+            padding: 20px; /* เพิ่มพื้นที่ภายในลิงก์ */
+            text-align: center; /* จัดการให้อยู่ตรงกลาง */
+             /* เพิ่มเส้นขอบ */
+            border-radius: 100px; /* เพิ่มมุมโค้ง */
+            margin-bottom: 50px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            width: 90px; /* กำหนดความกว้างของลิงก์ */
+            height: 90px; /* กำหนดความสูงของลิงก์ */
+            padding: 20px; /* เพิ่มพื้นที่ภายในลิงก์ */
+            text-align: center; /* จัดการให้อยู่ตรงกลาง */
+             /* เพิ่มเส้นขอบ */
+            border-radius: 10px; /* เพิ่มมุมโค้ง */
+            margin-bottom: 50px;
+        }
+
+        img {
+            width: 100%; /* ปรับขนาดรูปให้เต็มพื้นที่ของ <a> */
+            height: 100%; /* กำหนดให้รูปมีความสูงเต็มพื้นที่ของ <a> */
+            border-radius: 10px; /* ทำมุมโค้งให้กับรูปภาพ */
+            object-fit: cover; /* ครอบคลุมพื้นที่โดยไม่บิดเบี้ยว */
+            margin-top: 10px;
+        }
+
+        /* เพิ่มการขยายรูปเมื่อ hover ที่ลิงก์ */
+        a:hover {
+            transform: scale(1.05); /* ขยายเมื่อ hover */
+            transition: 0.3s;
+            width: 100px; /* กำหนดความกว้างของลิงก์ */
+            height: 100px; 
+        }
+
+    </style>
+</head>
+<body>
+    <b>
+    <img src="image/1.gif" alt="คำอธิบายรูปภาพ">
+    
+        </b>
+    <h1> หนูอยากรู้อะไรมั๊ยคะ </h1>
+
+    <div>
+        <!-- รูปภาพที่เชื่อมโยงไปที่ end.html -->
+        <a href="end.html">
+            <img src="image/yes.gif" alt="ไปยังหน้า End">
+        </a>
+        
+        
+        <!-- รูปภาพที่เชื่อมโยงไปที่ ninew.html -->
+        <a href="index.html">
+            <img src="image/no.gif" alt="ไปยังหน้า New">
+        </a>
+    </div>
+
+</body>
+</html>
